@@ -1,0 +1,10 @@
+#N canvas 1 119 219 228 10;
+#X obj 44 162 throw~ player;
+#X obj 44 39 r player-\$1;
+#X obj 44 130 readsf~;
+#X msg 44 101 open sounds/\$1.wav \, 1;
+#X obj 44 70 + 1;
+#X connect 1 0 4 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
